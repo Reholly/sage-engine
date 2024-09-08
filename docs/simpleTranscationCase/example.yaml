@@ -1,0 +1,18 @@
+pipeline:
+  name: Store product selling
+  steps:
+    - name: first
+      address: 198.128.0.18:10900
+      behaviour:
+        - onFailure: alert
+        - onSuccess: log
+    - name: second
+      address: 198.128.0.18:10900
+      behaviour:
+        - onFailure: alert
+        - onSuccess: log
+    - name: third
+      address: 198.128.0.18:10900
+      behaviour:
+        - onFailure: alert
+        - onSuccess: log
